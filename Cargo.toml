@@ -1,0 +1,8 @@
+[package]
+name = "disco"
+version = "0.1.0"
+authors = ["cyber9unk <www.github.com/cyber9unk>"]
+edition = "2018"
+
+[dependencies]
+serenity = "0.8"
