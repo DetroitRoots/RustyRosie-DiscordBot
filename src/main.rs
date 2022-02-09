@@ -5,16 +5,16 @@ use serenity::model::gateway::Ready;
 use serenity::model::channel::Message;
                   
 const TOKEN : &str = "";
-       //If you want to use this bot, you just need to add your token and compile it, please read the documentation for details.
+       //Add your token. Read the documentation for details.
 struct Handler;
 
 impl EventHandler for Handler 
 {
-     fn message(&self, ctx: Context, msg: Message)
+    fn message(&self, ctx: Context, msg: Message)
     {
-        if msg.content == "?ping"
+        if msg.content == "?wru"
         {
-            if let Err(why) = msg.channel_id.say(&ctx.http, "Pong?")
+            if let Err(why) = msg.channel_id.say(&ctx.http, "This is Rosie, long ago I was an amazing robot in The Jetsons Family. Now I got Rusty and mostly forgotten. I work as an Admin Assistant in this Discord Channel. Let's hug this old rusty machine.")
             {
                 println!("Error giving message: {:?}", why);
             }
