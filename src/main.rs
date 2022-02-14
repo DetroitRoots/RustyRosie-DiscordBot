@@ -4,8 +4,8 @@ use serenity::prelude::*;
 use serenity::model::gateway::Ready;
 use serenity::model::channel::Message;
                   
-const TOKEN : &str = "";
-       //Add your token. Read the documentation for details.
+const TOKEN : &str = //IGNORE-TOKEN;
+       //Add your token here//
 struct Handler;
 
 impl EventHandler for Handler 
